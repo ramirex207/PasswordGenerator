@@ -1,0 +1,32 @@
+@use 'variables' as v;
+.button{
+    width: 100%;
+    background: v.$primaryColor2;
+    color: v.$fontColor;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: top;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 18px;
+    height: 40px;
+    &:hover{
+        background-color: v.$primaryColor;
+    }
+    &.generate{
+        svg{
+            margin-left: 10px;
+        }
+    }
+    &.noselect{
+        background-color: v.$primaryColor3;
+        &:hover{
+            background-color: v.$primaryColor;
+        }
+
+    }
+}

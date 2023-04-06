@@ -1,0 +1,38 @@
+@use 'variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;800&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 50%;
+    &__fila1{
+        text-align: center;
+    }
+    &__fila2{
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: v.$primaryColor3;
+        }
+        & > * {
+            flex: 1;
+        }
+    }
+    &__input{
+        width: 100%;
+        background: none;
+        border-radius: 4px;
+        border: 2px solid v.$primaryColor3;
+        color: #fff;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover{
+            border: 1px solid v.$primaryColor;
+        }
+    }
+}
